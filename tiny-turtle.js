@@ -4,6 +4,7 @@
 // For more information, see http://github.com/toolness/tiny-turtle.
 
 function TinyTurtle(canvas, width, height) {
+
   canvas = canvas || document.querySelector('canvas');
   canvas.width = width;
   canvas.height = height;
@@ -27,7 +28,7 @@ function TinyTurtle(canvas, width, height) {
     if (rotation < 0) rotation += 360;
   };
 
-  self.penStyle = 'black';
+  self.penStyle = 'purple';
   self.penWidth = 1;
   self.penUp = function() { isPenDown = false; return self; };
   self.penDown = function() { isPenDown = true; return self; };

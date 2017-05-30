@@ -67,9 +67,24 @@ right(72);
 pentagon(size);
 right(60);
 hexagon(size);
-
 }
+
+function fractal(swirls){
+    for(i = 0; i <swirls; i= i+1){
+    forward(50);
+    forward(i);
+    right(50);
+    right(i);
+    forward(60);
+    forward(i);
+    right(60);
+    right(i);
+    
+    }
+}
+
+
 // Type your function call below
 
-superShape(50);
+fractal(1000);
 stamp();
